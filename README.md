@@ -19,18 +19,18 @@ This repository contains a Python pipeline that uses **Cellpose v4 (SAM)** to pr
 ✅ Export **CSV summaries** with quantitative data
 
 ---
-
-## 🗺️ Pipeline Workflow
+# Pipeline Workflow
 
 ```mermaid
 flowchart LR
-A[Input JPG Images / AVI Video] --> B[Cellpose v4 SAM Segmentation]
-B --> C[Mask Generation & Overlay]
-C --> D[Metric Calculation (Count, Area, Brightness)]
-C --> E[Output Videos with Masks]
-D --> F[Export CSV Summary]
-E --> F
+    A[Input JPG Images or AVI Video] --> B[Cellpose v4 SAM Segmentation]
+    B --> C[Mask Generation and Overlay]
+    C --> D[Metric Calculation Count Area Brightness]
+    C --> E[Output Videos with Masks]
+    D --> F[Export CSV Summary]
+    E --> F
 ```
+---
 ## 🖼️ Example Output
 
 ### 🎥 Masked Video Frame
